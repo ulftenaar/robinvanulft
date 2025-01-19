@@ -1,0 +1,43 @@
+body{
+# background-image: url( Foto/websiteAchtergrond.jpg);
+ }
+div{
+margin-bottom: 3vh;
+}
+
+
+.hoofd{
+# background-color:rgba(34, 189, 65, 100);
+position: sticky;
+padding-top: auto;
+}
+
+h1{
+font-size: clamp(50px,1vw, 100px);
+text-align: center;
+color:#20AE3D ;
+}
+
+.f_Bio{
+  font-family:sans-serif;
+ font-size:clamp(10px,3vw,20px);
+padding: 3vh 3vw 3vh 3vw;
+}
+
+.li_Menu{
+list-style-type: none;
+color:#20AE3D;
+text-align: center;
+margin:0;
+padding:0;
+}
+
+.li_Menu li {
+	margin-right:3em;
+	display: inline-block;
+}
+
+.rijContainer {
+  display:flex;
+  flex-direction:row;
+}
