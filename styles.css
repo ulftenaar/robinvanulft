@@ -1,43 +1,209 @@
 body{
-# background-image: url( Foto/websiteAchtergrond.jpg);
+/*background-image: url( Foto/websiteAchtergrond.jpg);*/
+background-size: 400vh;
+--h_Kleur: #39b270;
  }
-div{
-margin-bottom: 3vh;
-}
 
 
 .hoofd{
-# background-color:rgba(34, 189, 65, 100);
+background-color:rgb(57 178 112 / 10%);
 position: sticky;
-padding-top: auto;
+padding-top: 1rem;
+margin:1rem;
 }
+
+.overr{
+
+background-color:rgb(57 178 112 / 10%);
+height: fit-content;
+padding: 1rem;
+margin:1rem;
+}
+.overr::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.Portfolio {
+background-color:rgb(57 178 112 / 10%);
+padding: 1rem;
+margin: 1rem;
+
+}
+.PortGrid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 1rem;
+padding:1rem ;
+margin: 1rem;
+}
+
+.PortGrid img{
+  max-width:100%;
+  height: auto;
+
+}
+
+
+
+.c_homePart{
+background-color:rgb(57 178 112 / 10%);
+padding: 1rem;
+margin: 1rem;
+}
+
+.contactGrid{
+display:grid;
+gap:1rem;
+text-align:center;
+}
+
 
 h1{
+  font-family:f_Titel;
 font-size: clamp(50px,1vw, 100px);
 text-align: center;
-color:#20AE3D ;
+color:#39b270;
+margin-top:0px;
+border-bottom: 0px;
+font-weight:bold;
 }
 
-.f_Bio{
+.f_onderTitel{
+color:#39b270;
+text-align: center;
+font-size: clamp(2rem,1vw, 4rem);
+font-family:f_Titel;
+font-weight: bolder;
+text-transform: uppercase;
+margin: 0 1rem 1rem 1rem;
+
+}
+
+.f_Bio1{
   font-family:sans-serif;
  font-size:clamp(10px,3vw,20px);
-padding: 3vh 3vw 3vh 3vw;
+padding: 3vh 3vw 0vh calc(60%+3vw);
+color: var(--h_Kleur);
+font-weight: bold;
 }
+
+.f_Bio2{
+  font-family:sans-serif;
+ font-size:clamp(10px,3vw,20px);
+padding: 0vh 1vw 3vh 3vw;
+}
+
+
+.f_Port{
+  font-family: sans-serif;
+  font-size: clamp(1rem, 3vw, 2rem);
+  text-align: center;
+}
+
 
 .li_Menu{
 list-style-type: none;
-color:#20AE3D;
+color:#39b270;
 text-align: center;
 margin:0;
 padding:0;
+font-size: clamp(1rem,1vw, 2rem);
+font-family:f_Titel;
+
+text-transform: uppercase;
 }
 
 .li_Menu li {
-	margin-right:3em;
+	margin-right:2em;
 	display: inline-block;
 }
-
-.rijContainer {
-  display:flex;
-  flex-direction:row;
+.li_bio{
+list-style-type: none;
+margin-left:3em;
+text-align: right;
 }
+
+
+
+
+.Foto_profiel{ 
+float:left;
+  min-width:400px;
+  width: 60%;
+  padding-right:2rem;
+}
+
+.f_Contact{
+  text-align: center;
+ font-size:clamp(1.2rem,2vw,1.5rem);
+  color: var(--h_Kleur)   ;
+  font-family:sans-serif;
+  padding-bottom:1rem;
+}
+
+.f_Contact2 {
+  color: black;
+}
+
+
+.contactFlex{
+display: flex;
+flex-wrap: wrap;
+max-width: 100%;
+justify-content: space-evenly;
+flex-direction:row;
+}
+.contactTekst{
+width:80%;
+min-width:600px;
+overflow-y: wrap;
+flex: 1;
+margin: 1rem 1rem 0 1rem;
+}
+
+.contactFoto{
+flex: 1;
+min-width:400px;
+max-width: 600px;
+height: auto;
+margin: 1rem 1rem 1rem;
+aspect-ratio:1 / 1;
+}
+
+
+figcaption{
+text-align: center;
+font-family: sans-serif;
+}
+
+a{
+font-style:normal;
+text-decoration:none;
+
+ color:#229977;
+}
+
+a:hover{
+  color:var(--h_Kleur);
+
+  
+  }
+
+
+
+
+@font-face {
+    font-family: f_Titel;
+    src: url(Fonts/ayuthaya-regular.ttf);
+}
+
+
+
+
+
+
+
+
+
