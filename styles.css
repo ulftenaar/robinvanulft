@@ -25,12 +25,15 @@ margin:1rem;
     clear: both;
 }
 
+
+
 .Portfolio {
 background-color:rgb(57 178 112 / 10%);
 padding: 1rem;
 margin: 1rem;
 
 }
+
 .PortGrid{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
@@ -157,24 +160,24 @@ flex-direction:row;
 }
 .contactTekst{
 width:80%;
-min-width:600px;
+
 overflow-y: wrap;
-flex: 1;
+flex: 2;
 margin: 1rem 1rem 0 1rem;
 }
 
 .contactFoto{
-flex: 1;
+flex: 2;
 min-width:400px;
+
 max-width: 600px;
 height: auto;
 margin: 1rem 1rem 1rem;
-aspect-ratio:1 / 1;
 }
 
 
 figcaption{
-text-align: center;
+
 font-family: sans-serif;
 }
 
@@ -199,7 +202,67 @@ a:hover{
     src: url(Fonts/ayuthaya-regular.ttf);
 }
 
+.portFlex {
+display: flex;
+max-width:100%;
+flex-wrap:wrap;
+flex-direction:row;
+align-items:space-evenly;
+height:fit-content;
+}
 
+
+
+.portFlexPart {
+/*padding: min(0.5rem, 1%); */
+  padding: 0.5rem;
+flex-wrap: wrap;
+flex:1;
+min-width:400px;
+max-width:1000px;
+height: fit-content;
+justify-items:center;
+
+
+}
+
+.portFlexPart img {
+aspect-ratio: 1/1;
+
+object-fit: cover;
+
+}
+
+.portFlexBes {
+text-align: center;
+color: var(--h_Kleur);
+ font-family:f_Titel;
+ font-weight: 600;
+
+font-size: min(1.3rem, 10vw);
+padding-top: min(0.5rem, 2%);  
+}
+
+.portFlexPart p {
+visibility: hidden;
+  text-align: center;
+ font-size:min(0.8rem, 6vw)
+  color: black ;
+  font-family:sans-serif;
+}
+
+.portFlexPart:hover {
+}
+
+.portFlexPart:hover  img{
+opacity:80%;
+}
+
+.portFlexPart:hover p{
+  animation-duration: 3s; 
+animation-name: slide-in;
+  visibility: visible;
+}
 
 
 
