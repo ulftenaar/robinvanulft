@@ -10,6 +10,7 @@ background-color:rgb(57 178 112 / 10%);
 position: sticky;
 padding-top: 1rem;
 margin:1rem;
+
 }
 
 .overr{
@@ -23,6 +24,8 @@ margin:1rem;
     content: "";
     display: block;
     clear: both;
+    
+   display: 10px;  
 }
 
 
@@ -177,7 +180,7 @@ margin: 1rem 1rem 1rem;
 
 
 figcaption{
-
+text-align:center;
 font-family: sans-serif;
 }
 
@@ -207,7 +210,7 @@ display: flex;
 max-width:100%;
 flex-wrap:wrap;
 flex-direction:row;
-align-items:space-evenly;
+ align-items:space-evenly;
 height:fit-content;
 }
 
@@ -218,10 +221,10 @@ height:fit-content;
   padding: 0.5rem;
 flex-wrap: wrap;
 flex:1;
-min-width:400px;
-max-width:1000px;
+min-width:min(400px, 80vw);
+max-width:800px;
 height: fit-content;
-justify-items:center;
+margin:0 auto;
 
 
 }
@@ -229,6 +232,12 @@ justify-items:center;
 .portFlexPart img {
 aspect-ratio: 1/1;
 
+object-fit: cover;
+
+}
+
+.portFlexPart video {
+aspect-ratio: 3/2;
 object-fit: cover;
 
 }
@@ -246,13 +255,13 @@ padding-top: min(0.5rem, 2%);
 .portFlexPart p {
 visibility: hidden;
   text-align: center;
- font-size:min(0.8rem, 6vw)
-  color: black ;
-  font-family:sans-serif;
+ font-size:min(1rem, 6vw);
+  font-family: sans-serif;
+  padding-left:1vw;
+  padding-right:1vw;
 }
 
-.portFlexPart:hover {
-}
+
 
 .portFlexPart:hover  img{
 opacity:80%;
