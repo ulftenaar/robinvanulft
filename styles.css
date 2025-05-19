@@ -1,6 +1,7 @@
 body{
-/*background-image: url( Foto/websiteAchtergrond.jpg);*/
+/* background-image: url( Foto/websiteAchtergrond.jpg); */
 background-size: 400vh;
+
 --h_Kleur: #39b270;
  }
 
@@ -14,17 +15,15 @@ margin:1rem;
 }
 
 .overr{
-
 background-color:rgb(57 178 112 / 10%);
 height: fit-content;
 padding: 1rem;
 margin:1rem;
 }
+
 .overr::after {
     content: "";
-    display: block;
     clear: both;
-    
    display: 10px;  
 }
 
@@ -51,14 +50,27 @@ gap:1rem;
 text-align:center;
 }
 
+.contact_Lijst {
+  text-align: left;
+  list-style-type: circle;
+  list-style-position: outside;
+
+  /* color: var(--h_Kleur); */
+}
+
+.li_Titel{
+color:var(--h_Kleur);
+float: left;
+  padding-right:1rem;
+}
 
 h1{
-  font-family:f_Titel;
+  font-family:"f_Titel";
 font-size: clamp(50px,1vw, 100px);
 text-align: center;
 color:#39b270;
-margin-top:0px;
-border-bottom: 0px;
+margin-top:0;
+border-bottom: 0;
 font-weight:bold;
 }
 
@@ -66,17 +78,17 @@ font-weight:bold;
 color:var(--h_Kleur);
 text-align: center;
 font-size: clamp(2rem,1vw, 4rem);
-font-family:f_Titel;
+font-family:"f_Titel";
 font-weight: bolder;
 text-transform: uppercase;
-margin: 0 1rem 1rem 1rem;
+margin: 0 1rem 1rem;
 
 }
 
 .f_Bio1{
   font-family:sans-serif;
  font-size:clamp(10px,3vw,20px);
-padding: 3vh 3vw 0vh calc(60%+3vw);
+padding: 3vh 3vw 0 calc(60% + 3vw);
 color: var(--h_Kleur);
 font-weight: bold;
 }
@@ -84,7 +96,7 @@ font-weight: bold;
 .f_Bio2{
   font-family:sans-serif;
  font-size:clamp(10px,3vw,20px);
-padding: 0vh 1vw 3vh 3vw;
+padding: 0 1vw 3vh 3vw;
 }
 
 
@@ -102,8 +114,7 @@ text-align: center;
 margin:0;
 padding:0;
 font-size: clamp(1rem,1vw, 2rem);
-font-family:f_Titel;
-
+font-family:"f_Titel";
 text-transform: uppercase;
 }
 
@@ -111,6 +122,7 @@ text-transform: uppercase;
 	margin-right:2em;
 	display: inline-block;
 }
+
 .li_bio{
 list-style-type: none;
 margin-left:3em;
@@ -142,17 +154,16 @@ float:left;
 
 .contactFlex{
 display: flex;
-flex-wrap: wrap;
+flex-flow: row wrap;
 max-width: 100%;
 justify-content: space-evenly;
-flex-direction:row;
 }
+
 .contactTekst{
 width:80%;
-
 overflow-y: wrap;
 flex: 2;
-margin: 1rem 1rem 0 1rem;
+margin: 1rem 1rem 0;
 }
 
 .contactFoto{
@@ -161,7 +172,7 @@ min-width:400px;
 object-fit:cover;
 max-width: 600px;
 height: auto;
-margin: 1rem 1rem 1rem;
+margin: 1rem;
 }
 
 
@@ -173,8 +184,7 @@ font-family: sans-serif;
 a{
 font-style:normal;
 text-decoration:none;
-
- color:#229977;
+ color:#297;
 }
 
 a:hover{
@@ -187,15 +197,14 @@ a:hover{
 
 
 @font-face {
-    font-family: f_Titel;
-    src: url(Fonts/ayuthaya-regular.ttf);
+    font-family: "f_Titel";
+    src: url("Fonts/ayuthaya-regular.ttf");
 }
 
 .portFlex {
 display: flex;
 max-width:100%;
-flex-wrap:wrap;
-flex-direction:row;
+flex-flow:row wrap;
  align-items:space-evenly;
 height:fit-content;
 }
@@ -203,7 +212,7 @@ height:fit-content;
 
 
 .portFlexPart {
-/*padding: min(0.5rem, 1%); */
+/* padding: min(0.5rem, 1%); */
   padding: 0.5rem;
 flex-wrap: wrap;
 flex:1;
@@ -217,7 +226,6 @@ margin:0 auto;
 
 .portFlexPart img {
 aspect-ratio: 1/1;
-
 object-fit: cover;
 
 }
@@ -231,9 +239,8 @@ object-fit: cover;
 .portFlexBes {
 text-align: center;
 color: var(--h_Kleur);
- font-family:f_Titel;
+ font-family:"f_Titel";
  font-weight: 600;
-
 font-size: min(1.3rem, 10vw);
 padding-top: min(0.5rem, 2%);  
 }
@@ -250,7 +257,7 @@ visibility: hidden;
 
 
 .portFlexPart:hover  img{
-opacity:80%;
+opacity:0.8;
 }
 
 .portFlexPart:hover p{
